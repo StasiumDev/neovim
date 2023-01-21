@@ -1,10 +1,10 @@
 return require 'packer'.startup(function()
     --> nvim packer
     use 'wbthomason/packer.nvim'
-    
+
     --> nvim tree
     use 'kyazdani42/nvim-tree.lua'
-    
+
     --> lsp
     use 'neovim/nvim-lspconfig'
     use 'williamboman/nvim-lsp-installer'
@@ -13,6 +13,9 @@ return require 'packer'.startup(function()
     use 'saadparwaiz1/cmp_luasnip'
     use 'L3MON4D3/LuaSnip'
     use 'onsails/lspkind-nvim'
+
+    --> Github Copilot
+    use 'github/copilot.vim'
 
     --> Autopair
     use 'windwp/nvim-autopairs'
@@ -33,7 +36,7 @@ return require 'packer'.startup(function()
         'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    
+
     --> WebDev Icons
     use 'kyazdani42/nvim-web-devicons'
 
